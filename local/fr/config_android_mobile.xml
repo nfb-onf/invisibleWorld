@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<title><![CDATA[Invisible World]]></title>
+	<shareurl><![CDATA[http://invisibleworld.nfb.ca]]></shareurl>
+	<lang>FR</lang>
+	<links>
+		<link name="startover" side="left"><![CDATA[Reprendre]]></link>
+		<link name="about" side="left"><![CDATA[À Propos]]></link>
+		<link name="credits" side="left"><![CDATA[Générique De Fin]]></link>
+		<link name="mute" side="right" icon="MuteIcon"><![CDATA[Assourdir]]></link>
+	</links>
+
+	<videos>
+		<video id="introloop" url="introloop.mp3" />
+		<video id="menu" url="menu.mp4" loadtype="progressive" width="960" height="540" />
+		<video id="main" fallback="stream" loadtype="progressive" width="960" height="540">
+			<segments>
+				<segment name="Jeff" url="jeff_fr.mp4" start="0" next="Dr. Von" />
+				<segment name="Dr. Von" url="von_fr.mp4" start="376" next="Chana" />
+				<segment name="Chana" url="chana_fr.mp4" start="785" next="Conclusion" />
+				<segment name="Conclusion" url="conclusion_fr.mp4" start="1125" />
+			</segments>
+			<decision time="1125" grip1x="326" grip2x="633">
+				<leftchoice start="1125" end="1324" />
+				<midchoice start="1515" end="1716" />
+				<rightchoice start="1329" end="1511" />
+			</decision>
+			<sections>
+				<keyframe name="Jeff" time="57" />
+				<keyframe name="Dr. Von" time="376" />
+				<keyframe name="Chana" time="785" />
+				<keyframe name="Conclusion" time="1125" />
+			</sections>
+		</video>
+		<video id="stream" url="rtmp://cdnr-ll1.nfb.ca/a8908/v1/interactive-stage/invisibleworld/mp4:InvisibleWorld_2x2_540_h264_5Mbs_VBR_fr.mp4" loadtype="stream" width="960" height="540">
+			<decision time="1125" grip1x="326" grip2x="633">
+				<leftchoice start="1127" end="1330" />
+				<midchoice start="1520" end="1721" />
+				<rightchoice start="1334" end="1517" />
+			</decision>
+			<sections>
+				<keyframe name="Jeff" time="57" />
+				<keyframe name="Dr. Von" time="378" />
+				<keyframe name="Chana" time="787" />
+				<keyframe name="Conclusion" time="1125" />
+			</sections>
+		</video>
+	</videos>
+
+	<about contentfr="
+	À propos/About
+
+	Le monde invisible est tiré d’un récit inspiré à Tyler Enfield par des événements survenus lors de son séjour au Cambodge en 1994, peu après la guerre civile qui venait de ravager le pays. Enfield était alors professeur d’anglais et fréquentait un groupe d’expatriés vivant aux limites de l’excès et profitant de tout ce qu’ils pouvaient dans ce pays dépourvu d’infrastructures. Puis un jour il voit un enfant se noyer et être ramené à la vie, et c’est pour lui une expérience transformatrice.
+	
+	Tyler Enfield propose donc à Bonnie Thompson, productrice au Centre du Nord-Ouest de l’Office national du film, avec producteur exécutif David Christensen, de réaliser un court métrage à partir de ce récit. Fascinée par le personnage du témoin nord-américain mis en scène par Enfield, mais aussi par le personnage de la mère du petit enfant khmer et par celui du médecin khmer qui tente de sauver l’enfant, Bonnie Thompson suggère un film Internet interactif racontant cette aventure dans la perspective de chacun des trois personnages. Les défis sont cependant de taille. Il s’agit d’abord de développer davantage les personnages complémentaires et ensuite de rendre cette histoire interactive tout en préservant sa poésie et son naturel. 
+	
+	Galen Scorer, un stratège de l’interactif qui vient se joindre à l’équipe, suggère alors une technique innovatrice en divisant l’écran pour maintenir le rythme, la fluidité et l’émotion du récit original; le spectateur pourra agrandir ou réduire n’importe laquelle des trois sections de l’écran en rabattant des pelures successives de l’histoire.
+	
+	On fait appel à plusieurs autres personnes au fur et à mesure que la production avance.
+	
+	À Phnom Penh, la directrice de production Sopheak Sao et le producteur-adjoint Nico Mesterharm, aussi directeur de Meta House, un centre pour les arts, la communication et les médias, aident l’ONF à mettre en place la composante khmère du film : les acteurs, le personnel et le matériel, les lieux de tournage et les permis. Puis, en avril 2012, trois semaines intenses de tournage en différents endroits au Cambodge : dans les rues de Phnom Penh, dans un village lacustre sur le Tonlé Sap et dans la campagne cambodgienne, avec des acteurs professionnels et non professionnels, et avec des figurants dans les villages. Sereyvuth Kem et Chak Rya Ngem, les deux principaux interprètes khmers, sont des acteurs cambodgiens expérimentés, alors que Mark Tilly, qui joue le rôle de Jeff, n’est pas un acteur professionnel, mais c’est un véritable routard.
+	
+	En plus de Tyler Enfield, qui a romancé le personnage de Jeff et en a écrit la narration hors champ, plusieurs autres auteurs ont contribué à l’intrigue générale. La scénariste khmère Amara Chaya a imaginé une histoire pour les personnages khmers de Chana et du Dr Von, qu’on a ensuite traduite en anglais pour la jumeler au texte de Tyler Enfield et développer un découpage technique et un scénario maquette. L’écrivaine canadienne d’origine asiatique Madeleine Thien (célèbre entre autres pour son roman Lâcher les chiens, dont l’action se déroule en partie au Cambodge) a écrit le texte des voix hors champ pour Chana et le Dr Von, à partir de la description qu’en avait faite Amara Chaya. Tout le texte anglais de la narration hors champ a ensuite été traduit, en khmer par Sokvisal Kimsroy et en français par Robert Paquin. 
+	
+	Tyler Enfield et Galen Scorer avaient plusieurs obstacles à surmonter. Pour le cadrage durant le laborieux tournage au Cambodge, il leur fallait toujours tenir compte de la partie de l’écran que l’image occuperait, en plus d’avoir à diriger des acteurs khmers, professionnels et non professionnels, qui maîtrisaient peu l’anglais. De retour à Edmonton, le montage aussi s’est avéré compliqué. Il fallait que les images de chacune des trois parties de l’écran s’agencent de façon complémentaire et en harmonie avec l’enregistrement des voix hors champ.
+	
+	Un autre groupe de comédiens a fourni les voix hors champ en anglais et en français. Madeleine Thien prête sa voix au personnage de Channa, tant en français qu’en anglais; c’est l’acteur hollywoodien d’origine cambodgienne François Chau qui fait la voix du Dr Von pour les versions française et anglaise; pour la voix du routard Jeff, c’est l’acteur québécois Éric Paulhus qu’on entend en français, alors qu’en anglais, c’est le cinéaste et acteur d’Edmonton Dylan Rhys Howard. Dans la version khmère, les voix hors champ du Dr Von et de Channa sont respectivement celles des acteurs originaux Sereyvuth Kem et Chak Rya Ngem et, pour la voix de Jeff, c’est l’expatrié américain Kai Miller qu’on entend.
+	
+	Deux entreprises d’Edmonton, RED The Agency et gskinner, sont responsables de l’aspect technologique et conceptuel interactif.
+	
+	L’univers de ce Voyage invisible est animé par une conception sonore de John Blerot et une musique énigmatique composée par Everett LaRoi.
+	
+	Ce voyage entrepris en 1994 est presque terminé. Il ne vous reste plus qu’à prendre la route pour suivre cette histoire.
+	
+	Le monde invisible est une création de Tyler Enfield (auteur, directeur photo et réalisateur) et de Galen Scorer (conception interactive, coréalisateur, directeur photo et montage). Bonnie Thompson en est la productrice. Ce film a été produit par le Centre du Nord-Ouest de l’Office national du film du Canada. David Christensen était le chef de production.
+	
+	*Photo : Marcus Stevenson" />
+	<aboutImages>
+		<image lang="fr" url="iw_photo_2.jpg" subtitle="Mère et enfant khmers dont s’inspire cette histoire, 1994. *" />
+	</aboutImages>
+</xml>

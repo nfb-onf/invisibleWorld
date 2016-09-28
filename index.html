@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Invisible World - NFB Interactive Experience</title>
+		<link rel="stylesheet" href="index.css">
+
+		<script src="com/swfobject/swfobject.js"></script>
+		<script type="text/javascript">
+			function onLoaded () {
+				var hasFlash = (typeof swfobject !== 'undefined' && swfobject.getFlashPlayerVersion().major >= 10);
+				if (hasFlash) {
+					// Has Flash. Stick it in the content div.
+					var params = {
+						"quality":"high",
+						"bgcolor":"#000000",
+						"play":"true",
+						"loop":"true",
+						"wmode":"gpu",
+						"scale":"showall",
+						"menu":"true",
+						"devicefont":"false",
+						"salign":"",
+						"allowScriptAccess":"sameDomain"
+					};
+
+					swfobject.embedSWF(
+						/* swfUrl */				"bin-debug/InvisibleWorldDesktop.swf",
+						/* id */					"noFlash",
+						/* width */					"992",
+						/* height */				"550",
+						/* version */				"10",
+						/* expressInstallSwfUrl */	null,
+						/* flashVars */				null,
+						/* params */				params,
+						/* attributes */			null,
+						/* callbackFn */			onFlashComplete
+					);
+				} else {
+					// No Flash. Show the Download App buttons.
+					console.log(window.navigator.appVersion);
+
+					if (window.navigator.appVersion.indexOf("iPhone") > -1) {
+						// This is an iPhone.
+						document.removeChild(document.getElementById("link_store_and_en"));
+						document.removeChild(document.getElementById("link_store_and_kh"));
+					} else if (window.navigator.appVersion.indexOf("iPad") > -1) {
+						// This is an iPad.
+						document.removeChild(document.getElementById("link_store_and_en"));
+						document.removeChild(document.getElementById("link_store_and_kh"));
+					} else if (window.navigator.appVersion.indexOf("iPod") > -1) {
+						// This is an iPod.
+						document.removeChild(document.getElementById("link_store_and_en"));
+						document.removeChild(document.getElementById("link_store_and_kh"));
+					} else if (window.navigator.appVersion.indexOf("Android") > -1) {
+						// This is an Android.
+						document.removeChild(document.getElementById("link_store_ios_en"));
+						document.removeChild(document.getElementById("link_store_ios_kh"));
+					} else {
+						// This is a ... desktop?
+					}
+				}
+			}
+
+			function onFlashComplete (e) {
+				console.log("Flash generated: ");
+				if (e.success) {
+					console.log("Success!");
+				} else {
+					console.log("Failure!");
+				}
+			}
+		</script>
+	</head>
+	<body onload="onLoaded()">
+		<div id="flashContent">
+			<div id="noFlash" style="color: white; text-align: center;">
+				<div id="downloadTitle">
+					<h3>We noticed the device you're on doesn't support Flash. No problem. Try downloading our app instead!</h3>
+				</div>
+
+				<div id="downloadAppButtons">
+					<div id="englishAppButton" class="buttonContainer left">
+						<img src="assets/button-english.png" /><br/><br/>
+
+						<a id="link_store_ios_en" href="http://invisibleworld.ca/download/en">
+							<img src="assets/appstore-en.svg" />
+						</a><br />
+						<a id="link_store_and_en" href="http://invisibleworld.ca/download/en">
+							<img src="assets/google-en2.svg" />
+						</a><br />
+					</div>
+                    <div id="frenchAppButton" class="buttonContainer middle">
+						<img src="assets/button-french.png" /><br/><br/>
+
+						<a id="link_store_ios_fr" href="http://invisibleworld.ca/download/fr">
+							<img src="assets/appstore-fr.svg" />
+						</a><br />
+						<a id="link_store_and_fr" href="http://invisibleworld.ca/download/fr">
+							<img src="assets/google-fr2.svg" />
+						</a><br />
+					</div>
+					<div id="khmerAppButton" class="buttonContainer right">
+						<img src="assets/button-khmer.png" /><br /><br/>
+
+						<a id="link_store_ios_kh" href="http://invisibleworld.ca/download/kh">
+							<img src="assets/appstore-kh.svg" />
+						</a><br />
+						<a id="link_store_and_kh" href="http://invisibleworld.ca/download/kh">
+							<img src="assets/google-kh2.svg" />
+						</a><br />
+					</div>
+				</div>
+
+				<div id="downloadFlash">
+					<h3>Or download Flash here:</h3>
+					<a href="http://www.adobe.com/go/getflash">
+						<img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
+					</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

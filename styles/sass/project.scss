@@ -1,0 +1,48 @@
+html, body { height:100%; background-color: #000000; }
+body { margin:0; padding:0; overflow:hidden; }
+#flashContent { width:100%; height:100%; }
+
+h3 {
+  text-align: center;
+  color: white;
+}
+
+#noFlash {
+  width: 100%;
+  height: 100%;
+}
+
+.buttonContainer {
+  position: relative;
+  text-align: center;
+  width: 50%;
+  height: 100%;
+}
+
+#downloadTitle {
+  height: 20%;
+}
+#downloadAppButtons {
+  height: 45%;
+}
+#downloadFlash {
+  height: 35%;
+}
+
+.appButton {
+  position: relative;
+
+  :hover {
+	outline: white double medium;
+  }
+  :active {
+	outline: grey double medium;
+  }
+}
+
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}

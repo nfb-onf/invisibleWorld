@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<title><![CDATA[Invisible World]]></title>
+	<shareurl><![CDATA[http://invisibleworld.nfb.ca]]></shareurl>
+	<lang>EN</lang>
+	<links>
+		<link name="startover" side="left"><![CDATA[Start Over]]></link>
+		<link name="about" side="left"><![CDATA[About]]></link>
+		<link name="credits" side="left"><![CDATA[Credits]]></link>
+		<link name="fullscreen" side="right" icon="FullscreenIcon"><![CDATA[Fullscreen]]></link>
+		<link name="mute" side="right" icon="MuteIcon"><![CDATA[Mute]]></link>
+	</links>
+
+	<videos>
+		<video id="introloop" url="introloop.mp3" />
+		<video id="menu" url="menu.mp4" loadtype="progressive" width="960" height="540" />
+		<video id="main" fallback="stream" loadtype="progressive" width="960" height="540">
+			<segments>
+				<segment name="Jeff" url="jeff_en.mp4" start="0" next="Dr. Von" />
+				<segment name="Dr. Von" url="von_en.mp4" start="376" next="Chana" />
+				<segment name="Chana" url="chana_en.mp4" start="785" next="Conclusion" />
+				<segment name="Conclusion" url="conclusion_en.mp4" start="1125" />
+			</segments>
+			<decision time="1125" grip1x="326" grip2x="633">
+				<leftchoice start="1125" end="1324" />
+				<midchoice start="1515" end="1716" />
+				<rightchoice start="1329" end="1511" />
+			</decision>
+			<sections>
+				<keyframe name="Jeff" time="57" />
+				<keyframe name="Dr. Von" time="376" />
+				<keyframe name="Chana" time="785" />
+				<keyframe name="Conclusion" time="1125" />
+			</sections>
+		</video>
+		<video id="stream" url="rtmp://cdnr-ll1.nfb.ca/a8908/v1/interactive-stage/invisibleworld/mp4:InvisibleWorld_2x2_540_h264_5Mbs_VBR_en.mp4" loadtype="stream" width="960" height="540">
+			<decision time="1125" grip1x="326" grip2x="633">
+				<leftchoice start="1127" end="1330" />
+				<midchoice start="1519" end="1721" />
+				<rightchoice start="1334" end="1516" />
+			</decision>
+			<sections>
+				<keyframe name="Jeff" time="57" />
+				<keyframe name="Dr. Von" time="378" />
+				<keyframe name="Chana" time="787" />
+				<keyframe name="Conclusion" time="1125" />
+			</sections>
+		</video>
+	</videos>
+
+	<about contenten="
+	Invisible World originates from a story written by Tyler Enfield, based on events when he traveled and lived in Cambodia in 1994, shortly after the civil war in that country. Tyler was an English teacher, part of a subculture of expatriates that was more or less pushing the limits, taking what there was to be taken in a country devoid of infrastructure. And then one day he saw a child drown and come back to life, a transformative moment.
+	
+	Tyler approached producer Bonnie Thompson at the National Film Board’s North West studio with the idea of creating a short film. Bonnie and Executive Producer David Christensen, intrigued by Tyler’s North American witness character, but also by the Khmer child’s mother and the Khmer doctor who tried to save the child, suggested an interactive web film showing all three characters’ perspectives. But there are challenges: how to develop these other characters, and how to render such a poetic, flowing piece interactive?
+	
+	Galen Scorer, an interactive strategist, joined the team and created an innovative divided-screen approach to maintain the original story’s rhythm, fluidity and emotion: the user can expand or contract any one or more of three screen sections, peeling back layers as the story unfolds. 
+	
+	Many other people were drawn in to work on the project as it unfolded:
+	
+	In Phnom Penh, associate producer Nico Mesterharm and director of Meta House, an arts/communication/media centre, along with production manager Sopheak Sao, helped the NFB organize all the Khmer aspects of the project: actors, crew, equipment, locations, and permits. Filming took place over an intense 3 week shoot in April 2012 in diverse Cambodia locations: on the streets of Phnom Penh, a floating village on the Tonle Sap River and in rural Cambodia, working with actors, non-actors and extras in the villages. The two lead Khmer actors, Sereyvuth Kem and Chak Rya Ngem, are experienced Cambodian actors. Mark Tilly, who plays Jeff, was not an experienced actor, although he was a real backpacker.
+	
+	Besides Tyler, who fictionalized the Jeff character and wrote that voice-over narration, a number of other writers contributed to the overall story. Khmer screenwriter Amara Chaya developed fictionalized stories for the Khmer characters of Chana and Dr. Von which were then translated into English and used alongside Tyler’s text to develop a shooting script and storyboards. Renowned Asian-Canadian writer Madeleine Thien (author of the novel Dogs at the Perimeter, partly set in Cambodia) wrote the voice-over scripts for Chana and Dr. Von, based on Amara’s writing. All the English voice-over narrations were then translated into Khmer by Sokvisal Kimsroy, and into French by Robert Paquin.
+	
+	There were many challenges for Tyler and Galen: During the demanding Cambodian shoot, as cameramen they always had the extra challenge of considering what segment of the screen they were shooting for, while directing Khmer actors and non actors who had little English. Back in Edmonton, the editing was complicated: the visuals on each of the three screens had to work with the others and in turn work with the voice over recording.
+	
+	Another set of actors did the voice over narrations in English:  Madeleine Thien’s voice becomes Chana’s in English as well as in French; Francois Chau, a Cambodian American Hollywood actor, also voices Dr. Von in English as well as in French.  Dylan Rhys-Howard, an Edmonton filmmaker and actor, voices backpacker Jeff in English, and Quebecois actor Éric Paulhus does Jeff’s voice in French. For the Khmer version, voice-overs were done in Phnom Penh by original actors Sereyvuth Kem and Chak Rya Ngem, and American expatriate Kai Miller.
+	
+	Interactive technology and design is created by Edmonton media companies RED The Agency and gskinner.
+	
+	The world of Invisible World is brought alive by sound designer John Blerot, with the haunting music composed by Evertt LaRoi.
+	
+	The journey that began in 1994 has almost come to an end.  All it needs is you to take a journey with the story.
+	
+	Invisible World is created by Tyler Enfield (writer, cinematographer and director), Galen Scorer (interactive creator, co-director, cinematographer and editor), with producer Bonnie Thompson. It is produced by the National Film Board’s North West Centre. David Christensen is Executive Producer.
+	
+	*Photo credit: Marcus Stevenson" />
+	<aboutImages>
+		<image lang="en" url="iw_photo_2.jpg" subtitle="Khmer mother and child on which the story is based, 1994. Photo taken by Marcus Stevenson. *" />
+	</aboutImages>
+</xml>

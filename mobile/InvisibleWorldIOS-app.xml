@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<application xmlns="http://ns.adobe.com/air/application/22.0">
+    <id>ca.nfb.northwest.invisibleworld</id>
+    <versionNumber>2.0.1</versionNumber>
+    <filename>InvisibleWorldIOS</filename>
+    <description>
+    	<text xml:lang="en"></text>
+		<text xml:lang="fr"></text>
+		<text xml:lang="kh"></text>
+    </description>
+    <!-- To localize the description, use the following format for the description element.
+	<description>
+		<text xml:lang="en">English App description goes here</text>
+		<text xml:lang="fr">French App description goes here</text>
+		<text xml:lang="kh">Khmer App description goes here</text>
+	</description>
+	-->
+    <name>Invisible World</name>
+    <!-- To localize the name, use the following format for the name element.
+	<name>
+		<text xml:lang="en">Invisible World</text>
+		<text xml:lang="fr">Le monde invisible</text>
+		<text xml:lang="kh">ពិភពអាថ៌កំបាំង</text>
+	</name>-->
+    <copyright></copyright>
+    <initialWindow>
+        <content>InvisibleWorldIOS.swf</content>
+        <systemChrome>standard</systemChrome>
+        <transparent>false</transparent>
+        <visible>true</visible>
+        <fullScreen>true</fullScreen>
+        <autoOrients>true</autoOrients>
+        <aspectRatio>landscape</aspectRatio>
+        <renderMode>direct</renderMode>
+    </initialWindow>
+    <customUpdateUI>false</customUpdateUI>
+    <allowBrowserInvocation>false</allowBrowserInvocation>
+    <icon>
+        <image48x48>thumb_48x48.png</image48x48>
+        <image57x57>thumb_57x57.png</image57x57>
+        <image72x72>thumb_72x72.png</image72x72>
+        <image76x76>thumb_76x76.png</image76x76>
+        <image120x120>thumb_120x120.png</image120x120>
+        <image128x128>thumb_128x128.png</image128x128>
+        <image152x152>thumb_152x152.png</image152x152>
+    </icon>
+    <iPhone>
+        <requestedDisplayResolution>high</requestedDisplayResolution>
+        <Entitlements><![CDATA[
+            <key>keychain-access-groups</key>
+            <array>
+                <string>9RJF3UTGW7.*</string>
+            </array>
+            <key>get-task-allow</key>
+            <false/>
+            <key>application-identifier</key>
+            <string>9RJF3UTGW7.ca.nfb.northwest.invisibleworld</string>
+            <key>com.apple.developer.team-identifier</key>
+            <string>9RJF3UTGW7</string>
+            <key>beta-reports-active</key>
+            <true/>
+        ]]></Entitlements>
+        <InfoAdditions><![CDATA[
+            <key>UIDeviceFamily</key>
+            <array><string>1</string><string>2</string></array>
+        ]]></InfoAdditions>
+    </iPhone>
+</application>
